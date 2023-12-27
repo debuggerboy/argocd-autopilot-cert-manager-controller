@@ -1,0 +1,23 @@
+# Basic over-ride file values.yaml for Cert-Manager
+
+# Configure the namespace for Cert-Manager
+global:
+  namespace: cert-manager
+
+# Enable CRD installation
+installCRDs: true
+
+# Configure the Cert-Manager issuer
+# This is just an example, adjust according to your needs
+issuer:
+  email: anisha@corra.com
+
+# Enable/disable various Cert-Manager features
+features:
+  # Enable/disable ingress support
+  ingress: true
+  # Enable/disable webhook support
+  webhook: true
+
+# Additional configuration for specific components (e.g., ACME, DNS, etc.)
+# These values depend on the specific configurations you want to set up
